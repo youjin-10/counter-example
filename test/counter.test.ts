@@ -1,7 +1,7 @@
 import { setActivePinia, createPinia } from 'pinia';
 import { useCounterStore } from '../src/store/counter';
-// import { mount } from '@vue/test-utils';
 
+// Unit testing a store
 describe('Counter Store', () => {
   beforeEach(() => {
     setActivePinia(createPinia());
