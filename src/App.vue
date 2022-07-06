@@ -3,7 +3,7 @@
     <h1 class="text-gray-500 font-bold">{{ counterStore.counterNumber }}</h1>
 
     <div class="mt-5">
-      <PrimaryButton text="UPppp" @click-event="increaseNumber" />
+      <PrimaryButton text="UP" @click-event="increaseNumber" />
       <DefaultButton text="DOWN" @click-event="decreaseNumber" />
     </div>
   </div>
