@@ -1,7 +1,6 @@
 <template>
   <div class="max-w-md mx-auto text-center">
-    <h1 class="text-gray-500 font-bold">{{ counterStore.counterNumber }}</h1>
-
+    <CounterTitle :counterNum="counterStore.counterNumber" />
     <div class="mt-5">
       <PrimaryButton text="UP" @click-event="increaseNumber" />
       <DefaultButton text="DOWN" @click-event="decreaseNumber" />
@@ -14,6 +13,7 @@ import { defineComponent } from 'vue';
 import { useCounterStore } from './store/counter';
 import PrimaryButton from './components/Buttons/PrimaryButton.vue';
 import DefaultButton from './components/Buttons/DefaultButton.vue';
+import CounterTitle from './components/CounterTitle.vue';
 
 export default defineComponent({
   setup() {
@@ -26,6 +26,7 @@ export default defineComponent({
   components: {
     PrimaryButton,
     DefaultButton,
+    CounterTitle,
   },
   methods: {
     increaseNumber() {
