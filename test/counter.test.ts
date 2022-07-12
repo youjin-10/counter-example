@@ -1,5 +1,5 @@
 import { setActivePinia, createPinia } from 'pinia';
-import { useCounterStore } from '../src/store/counter';
+import { useCounterStore } from '../src/pages/counter/store/counter';
 
 // Unit testing a store
 describe('Counter Store', () => {
