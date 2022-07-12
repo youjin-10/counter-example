@@ -22,6 +22,7 @@ describe('Contents Store', () => {
     // expect().toBe()
   });
 
+  /*
   it('gets empty data', async () => {
     // given
     // const msg = 'errrrrrrr';
@@ -43,4 +44,5 @@ describe('Contents Store', () => {
     // @ts-ignore
     expect(result.data).toEqual([]);
   });
+  */
 });
